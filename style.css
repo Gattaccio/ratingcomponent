@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --sfondopagina: #141519;
+    --testobianco: #fff;
+    --container : #1f2630;
+    --pulsanti: #262f38;
+    --arancio: #fc7613;
+    --testogrigio: #7f8891;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    transition: .2s all;
+}
+
+
+body {
+    background-color: var(--sfondopagina);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container-star {
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: var(--pulsanti);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container {
+    height:470px;
+    width:470px;
+    border-radius: 25px;
+    background:var(--container);
+    padding:2.5rem;
+
+}
+
+.title {
+    color:var(--testobianco);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.text{
+    color: var(--testogrigio);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.vote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+.number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--pulsanti);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--testobianco);
+    padding: 2rem;
+    font-weight: 700;
+}
+
+.active {
+    background-color: #7f8891;
+}
+
+.number:hover {
+    background-color: var(--arancio);
+    color: var(--testobianco);
+    cursor: pointer;
+}
+
+.button {
+    background-color: var(--arancio);
+    padding: 1.3rem;
+    text-align: center;
+    color: var(--testobianco);
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.button:hover {
+    background-color: var(--testobianco);
+    color: var(--arancio);
+    cursor: pointer;
+}
+
+
+.hidden {
+    display: none;
+}
+
